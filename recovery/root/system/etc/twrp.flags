@@ -15,7 +15,7 @@
 /product        ext4    /dev/block/by-name/product     flags=backup=1;wipeingui;display="Product"
 /product_image	emmc	/dev/block/by-name/product	flags=backup=1;flashimg;display="Product Image"
 /cache          ext4    /dev/block/by-name/cache       flags=backup=1
-/data           ext4    /dev/block/by-name/userdata
+/data           ext4    /dev/block/by-name/userdata    flags=fileencryption=ice;quota;reservedsize=128M
 
 # Removable storage
 /external_sd    auto    /dev/block/mmcblk1p1   /dev/block/mmcblk1    flags=storage;wipeingui;removable;display="Micro SD card"
