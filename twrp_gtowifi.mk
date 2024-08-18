@@ -32,3 +32,8 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="gtowifixx-user 11 RP1A.200720.012 T290XXU3CVG3 release-keys"
+
+BUILD_FINGERPRINT := samsung/gtowifixx/gtowifi:11/RP1A.200720.012/T290XXU3CVG3:user/release-keys
