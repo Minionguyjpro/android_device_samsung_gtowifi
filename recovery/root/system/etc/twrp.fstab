@@ -16,6 +16,9 @@
 /product_image	emmc	/dev/block/by-name/product	flags=backup=1;flashimg;display="Product Image"
 /cache          ext4    /dev/block/by-name/cache       flags=backup=1
 /data           ext4    /dev/block/by-name/userdata    flags=fileencryption=ice;quota
+/modem          emmc    /dev/block/by-name/modem       flags=backup=1;display="Modem"
+/efs1           emmc    /dev/block/by-name/modemst1    flags=subpartitionof=/sec_efs
+/efs2           emmc    /dev/block/by-name/modemst2    flags=subpartitionof=/sec_efs
 
 # Removable storage
 /external_sd    auto    /dev/block/mmcblk1p1   /dev/block/mmcblk1    flags=storage;wipeingui;removable;display="Micro SD card"
